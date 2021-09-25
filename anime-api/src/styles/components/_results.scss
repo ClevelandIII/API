@@ -1,0 +1,153 @@
+@use "../themes/defaultTheme" as *;
+@use "../util/variables" as *;
+@use "../util/mixins" as *;
+
+.section1 {
+  .results-info {
+    margin-bottom: 0.5rem;
+  }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0.5rem 11rem;
+  margin: 0 auto;
+  .title-case {
+    text-align: center;
+    border-bottom: 1px solid black;
+  }
+  .summery {
+    text-align: center;
+  }
+  .info {
+    text-align: center;
+  }
+  .img {
+    text-align: center;
+  }
+  img {
+    width: 50%;
+    height: 15rem;
+  }
+  .results-info {
+    width: 98%;
+    // height: 95%;
+    border: 1px solid $primary-1;
+    border-radius: $radius;
+    background-color: rgba($color: rgb(255, 255, 255), $alpha: 0.5);
+    padding: 0.5rem 0.5rem;
+    h3 {
+      color: black;
+      font-size: 1.1rem;
+      text-align: center;
+    }
+    a {
+      text-decoration: none;
+      color: $primary-1;
+    }
+    p {
+      color: $grey-2;
+    }
+    .remove {
+      color: $red-light;
+      transition: $transition;
+      &:hover {
+        transform: all 0.5;
+        color: $red-dark;
+      }
+    }
+  } 
+  .name {
+    font-size: 1.2rem;
+  }
+}
+
+.section2 {
+  .results-info {
+    margin-bottom: 0.5rem;
+  }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0.5rem 11rem;
+  margin: 0 auto;
+  .title-case {
+    text-align: center;
+    border-bottom: 1px solid black;
+  }
+  .summery {
+    text-align: center;
+  }
+  .info {
+    text-align: center;
+  }
+  .img {
+    text-align: center;
+  }
+  img {
+    width: 95%;
+    height: 15rem;
+  }
+  .results-info {
+    width: 98%;
+    // height: 95%;
+    border: 1px solid $primary-1;
+    border-radius: $radius;
+    background-color: rgba($color: rgb(255, 255, 255), $alpha: 0.5);
+    padding: 0.5rem 0.5rem;
+    h3 {
+      color: black;
+      font-size: 1.1rem;
+      text-align: center;
+    }
+    a {
+      text-decoration: none;
+      color: $primary-1;
+    }
+    p {
+      color: $grey-2;
+    }
+    .remove {
+      color: $red-light;
+      transition: $transition;
+      &:hover {
+        transform: all 0.5;
+        color: $red-dark;
+      }
+    }
+  }
+  .name {
+    font-size: 1.2rem;
+  }
+}
+
+.loading {
+  font-size: 2rem;
+}
+
+article{
+  text-align: center;
+  width: 90%;
+  border: 1px solid $primary-1;
+  border-radius: $radius;
+  background-color: rgba($color: rgb(255, 255, 255), $alpha: 0.5);
+  padding: 0.5rem 0.5rem;
+  margin-left: 5%;
+  .profile{
+    border-radius: $radius;
+    @include flex-center;
+    .img{
+      img{
+        height: 20rem;
+        width: 20rem;
+        border-radius: $radius;
+      }
+    }
+    .rest{
+      margin-left: 4rem;
+      a{
+        color: $primary-1;
+      }
+      p{
+        margin-bottom: 1%;
+      }
+    }
+  }
+}
